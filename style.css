@@ -1,0 +1,121 @@
+body{
+    background-color: black;
+}
+.box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to right,#FDA083 ,#F65DC3 );
+    border-radius: 10px;
+    animation-name: moving-box;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes moving-box {
+    0%{
+        left: 0;
+        top: 0;
+        animation-timing-function: ease-in-out;
+        
+    }
+    15%{
+        background-image: linear-gradient(to right,aqua,aqua);
+    }
+    25%{
+        left: 84vw;
+        top: 0;
+        animation-timing-function: ease-in;
+        background-image: linear-gradient(to right,aqua,aqua);
+    }
+    35%{
+        background-image: linear-gradient(#5A3597 ,#59D7D7 );
+    }
+    50%{
+        left: 84vw;
+        top: 67vh;
+        animation-timing-function: ease-in-out;
+        background-image: linear-gradient(#5A3597 ,#59D7D7 );
+    }
+    62%{
+        background-image: linear-gradient(#F9CD80 ,#F9CD80 );
+    }
+    75%{
+        left:0 ;
+        top:67vh ;
+        animation-timing-function: ease-out;
+        background-image: linear-gradient(#F9CD80 ,#F9CD80 );
+    }
+    87%{
+        background-image: linear-gradient(#CB8C1E ,#CB8C1E );
+    }
+    100%{
+        left: 0;
+        top: 0;
+        animation-timing-function: ease-out;
+        background-image: linear-gradient(#CB8C1E ,#CB8C1E );
+    }
+}
+
+.text p{
+    margin: 0px;
+    color: white;
+    font-size: 10rem;
+    margin-left: 22vw;
+}
+
+@media screen and (min-width:350px) and (max-width:500px){
+    .box{
+        width: 75px;
+        height: 75px;
+    }
+    @keyframes moving-box {
+        0%{
+            left: 0;
+            top: 0;
+            animation-timing-function: ease-in-out;
+            
+        }
+        15%{
+            background-image: linear-gradient(to right,aqua,aqua);
+        }
+        25%{
+            left: 75vw;
+            top: 0;
+            animation-timing-function: ease-in;
+            background-image: linear-gradient(to right,aqua,aqua);
+        }
+        35%{
+            background-image: linear-gradient(#5A3597 ,#59D7D7 );
+        }
+        50%{
+            left: 75vw;
+            top: 67vh;
+            animation-timing-function: ease-in-out;
+            background-image: linear-gradient(#5A3597 ,#59D7D7 );
+        }
+        62%{
+            background-image: linear-gradient(#F9CD80 ,#F9CD80 );
+        }
+        75%{
+            left:0 ;
+            top:67vh ;
+            animation-timing-function: ease-out;
+            background-image: linear-gradient(#F9CD80 ,#F9CD80 );
+        }
+        87%{
+            background-image: linear-gradient(#CB8C1E ,#CB8C1E );
+        }
+        100%{
+            left: 0;
+            top: 0;
+            animation-timing-function: ease-out;
+            background-image: linear-gradient(#CB8C1E ,#CB8C1E );
+        }
+    }
+    .text p{
+        font-size: 2rem;
+        margin-top: 20vh;
+        margin-left: 28vw;
+    }
+}
